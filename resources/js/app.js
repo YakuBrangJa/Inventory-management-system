@@ -1,5 +1,7 @@
 import { createApp } from "vue";
 
+import HomePage from "./components/Home.vue";
+
 // Router
 import router from "./router";
 

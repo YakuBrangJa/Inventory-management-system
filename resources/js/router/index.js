@@ -7,7 +7,8 @@ import HomePage from "../components/Home.vue";
 import LogoutMethod from "../components/auth/Logout.vue";
 
 const routes = [
-  { path: "/", component: LoginPage, name: "/" },
+  { path: "/", redirect: "/login" },
+  { path: "/login", component: LoginPage },
   { path: "/register", component: RegisterPage },
   { path: "/forget", component: ForgetPage },
   { path: "/logout", component: LogoutMethod },
