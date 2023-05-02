@@ -1,7 +1,7 @@
 <template>
   <div class="">
     <div class="row justify-content-center">
-      <div class="col-xl-10 col-lg-12 col-md-9">
+      <div class="col-xl-8 col-lg-12 col-md-9">
         <div class="card shadow-sm my-5">
           <div class="card-body p-0">
             <div class="row">
@@ -93,7 +93,7 @@ export default {
   name: "RegisterPage",
   created() {
     if (User.loggedIn()) {
-      this.$router.push("/home");
+      this.$router.push("/app/home");
     }
   },
   methods: {
@@ -108,7 +108,7 @@ export default {
             title: "Signed up successfully",
           });
           console.log(res.data);
-          this.$router.push("/home");
+          this.$router.push("/app/home");
         })
         .catch((err) => {
           console.log(err.response.data);

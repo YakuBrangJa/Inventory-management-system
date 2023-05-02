@@ -441,7 +441,7 @@ export default {
   name: "MainSection",
   created() {
     if (!User.loggedIn()) {
-      this.$router.push({ name: "/" });
+      this.$router.push({ name: "/login" });
     }
   },
 };

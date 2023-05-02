@@ -5,7 +5,7 @@
       <div id="content">
         <AppTopbar />
         <div class="container-fluid" id="container-wrapper">
-          <MainSection />
+          <router-view></router-view>
         </div>
       </div>
     </div>
@@ -15,14 +15,12 @@
 <script>
 import AppTopbar from "./Topbar.vue";
 import AppSidebar from "./Sidebar.vue";
-import MainSection from "./Main.vue";
 
 export default {
   name: "HomePage",
   components: {
     AppTopbar,
     AppSidebar,
-    MainSection,
   },
 };
 </script>
